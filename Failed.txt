@@ -1,0 +1,1453 @@
+START - TEST 14
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(59);
+generatedTree.insert(97);
+generatedTree.insert(71);
+generatedTree.insert(66);
+generatedTree.insert(34);
+generatedTree.insert(41);
+generatedTree.insert(99);
+generatedTree.insert(48);
+generatedTree.insert(96);
+generatedTree.insert(29);
+generatedTree.insert(81);
+generatedTree.insert(92);
+generatedTree.insert(89);
+generatedTree.insert(83);
+generatedTree.insert(63);
+generatedTree.insert(24);
+generatedTree.insert(67);
+generatedTree.insert(64);
+generatedTree.insert(23);
+generatedTree.insert(38);
+------------------------------
+
+└── 59, 92
+    ├── 29, 41
+    │   ├── 23, 24
+    │   ├── 34, 38
+    │   └── 48
+    ├── 66, 71
+    │   ├── 63, 64
+    │   ├── 67
+    │   └── 81, 83, 89
+    └── 97
+        ├── 96
+        └── 99
+
+------------------------------
+
+generatedTree.delete(64)
+generatedTree.delete(99)
+generatedTree.delete(66)
+
+------------------------------
+
+└── 41, 71
+    ├── 29
+    │   ├── 23, 24
+    │   └── 34, 38
+    ├── 59
+    │   ├── 48
+    │   └── 63, 67
+    └── 92
+        ├── 81, 83, 89
+        └── 96, 97
+
+
+------------------------------
+
+END - TEST 14
+
+
+
+START - TEST 9
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(56);
+generatedTree.insert(76);
+generatedTree.insert(91);
+generatedTree.insert(82);
+generatedTree.insert(80);
+generatedTree.insert(83);
+generatedTree.insert(42);
+generatedTree.insert(59);
+generatedTree.insert(41);
+generatedTree.insert(63);
+generatedTree.insert(96);
+generatedTree.insert(85);
+------------------------------
+
+└── 76
+    ├── 56
+    │   ├── 41, 42
+    │   └── 59, 63
+    └── 82, 91
+        ├── 80
+        ├── 83, 85
+        └── 96
+
+------------------------------
+
+generatedTree.delete(63)
+generatedTree.delete(76)
+
+------------------------------
+
+└── 82
+    ├── 56
+    │   ├── 41, 42
+    │   └── 59, 80
+    └── 91
+        ├── 83, 85
+        └── 96
+
+
+------------------------------
+
+END - TEST 9
+
+
+
+START - TEST 19
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(74);
+generatedTree.insert(63);
+generatedTree.insert(72);
+generatedTree.insert(67);
+generatedTree.insert(32);
+generatedTree.insert(48);
+generatedTree.insert(31);
+generatedTree.insert(55);
+generatedTree.insert(25);
+generatedTree.insert(60);
+generatedTree.insert(83);
+generatedTree.insert(53);
+------------------------------
+
+└── 63
+    ├── 32, 55
+    │   ├── 25, 31
+    │   ├── 48, 53
+    │   └── 60
+    └── 72
+        ├── 67
+        └── 74, 83
+
+------------------------------
+
+generatedTree.delete(63)
+generatedTree.delete(53)
+
+------------------------------
+
+└── 60
+    ├── 32
+    │   ├── 25, 31
+    │   └── 48, 55
+    └── 72
+        ├── 67
+        └── 74, 83
+
+
+------------------------------
+
+END - TEST 19
+
+
+
+START - TEST 91
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(81);
+generatedTree.insert(27);
+generatedTree.insert(46);
+generatedTree.insert(22);
+generatedTree.insert(73);
+generatedTree.insert(17);
+generatedTree.insert(13);
+generatedTree.insert(88);
+generatedTree.insert(50);
+generatedTree.insert(77);
+generatedTree.insert(20);
+generatedTree.insert(47);
+generatedTree.insert(19);
+------------------------------
+
+└── 46
+    ├── 17, 22
+    │   ├── 13
+    │   ├── 19, 20
+    │   └── 27
+    └── 73, 81
+        ├── 47, 50
+        ├── 77
+        └── 88
+
+------------------------------
+
+generatedTree.delete(50)
+generatedTree.delete(73)
+
+------------------------------
+
+└── 46
+    ├── 17, 22
+    │   ├── 13
+    │   ├── 19, 20
+    │   └── 27
+    └── 81
+        ├── 47, 77
+        └── 88
+
+
+------------------------------
+
+END - TEST 91
+
+
+
+START - TEST 14
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(59);
+generatedTree.insert(97);
+generatedTree.insert(71);
+generatedTree.insert(66);
+generatedTree.insert(34);
+generatedTree.insert(41);
+generatedTree.insert(99);
+generatedTree.insert(48);
+generatedTree.insert(96);
+generatedTree.insert(29);
+generatedTree.insert(81);
+generatedTree.insert(92);
+generatedTree.insert(89);
+generatedTree.insert(83);
+generatedTree.insert(63);
+generatedTree.insert(24);
+generatedTree.insert(67);
+generatedTree.insert(64);
+generatedTree.insert(23);
+generatedTree.insert(38);
+------------------------------
+
+└── 59, 92
+    ├── 29, 41
+    │   ├── 23, 24
+    │   ├── 34, 38
+    │   └── 48
+    ├── 66, 71
+    │   ├── 63, 64
+    │   ├── 67
+    │   └── 81, 83, 89
+    └── 97
+        ├── 96
+        └── 99
+
+------------------------------
+
+generatedTree.delete(64)
+generatedTree.delete(99)
+generatedTree.delete(66)
+
+------------------------------
+
+└── 41, 71
+    ├── 29
+    │   ├── 23, 24
+    │   └── 34, 38
+    ├── 59
+    │   ├── 48
+    │   └── 63, 67
+    └── 92
+        ├── 81, 83, 89
+        └── 96, 97
+
+
+------------------------------
+
+END - TEST 14
+
+
+
+START - TEST 16
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(91);
+generatedTree.insert(74);
+generatedTree.insert(95);
+generatedTree.insert(20);
+generatedTree.insert(40);
+generatedTree.insert(71);
+generatedTree.insert(18);
+generatedTree.insert(46);
+generatedTree.insert(84);
+generatedTree.insert(15);
+generatedTree.insert(58);
+generatedTree.insert(69);
+generatedTree.insert(36);
+generatedTree.insert(49);
+generatedTree.insert(85);
+generatedTree.insert(44);
+generatedTree.insert(98);
+generatedTree.insert(82);
+------------------------------
+
+└── 40, 71
+    ├── 18
+    │   ├── 15
+    │   └── 20, 36
+    ├── 58
+    │   ├── 44, 46, 49
+    │   └── 69
+    └── 84, 91
+        ├── 74, 82
+        ├── 85
+        └── 95, 98
+
+------------------------------
+
+generatedTree.delete(15)
+generatedTree.delete(20)
+
+------------------------------
+
+└── 71
+    ├── 40, 58
+    │   ├── 18, 36
+    │   ├── 44, 46, 49
+    │   └── 69
+    └── 84, 91
+        ├── 74, 82
+        ├── 85
+        └── 95, 98
+
+
+------------------------------
+
+END - TEST 16
+
+
+
+START - TEST 17
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(35);
+generatedTree.insert(66);
+generatedTree.insert(30);
+generatedTree.insert(47);
+generatedTree.insert(91);
+generatedTree.insert(57);
+generatedTree.insert(88);
+generatedTree.insert(67);
+generatedTree.insert(50);
+generatedTree.insert(94);
+------------------------------
+
+└── 35, 66, 88
+    ├── 30
+    ├── 47, 50, 57
+    ├── 67
+    └── 91, 94
+
+------------------------------
+
+generatedTree.delete(91)
+generatedTree.delete(66)
+generatedTree.delete(88)
+
+------------------------------
+
+└── 35, 57
+    ├── 30
+    ├── 47, 50
+    └── 67, 94
+
+
+------------------------------
+
+END - TEST 17
+
+
+
+START - TEST 30
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(43);
+generatedTree.insert(15);
+generatedTree.insert(13);
+generatedTree.insert(14);
+generatedTree.insert(79);
+generatedTree.insert(60);
+generatedTree.insert(22);
+------------------------------
+
+└── 15, 60
+    ├── 13, 14
+    ├── 22, 43
+    └── 79
+
+------------------------------
+
+generatedTree.delete(22)
+generatedTree.delete(60)
+
+------------------------------
+
+└── 15
+    ├── 13, 14
+    └── 43, 79
+
+
+------------------------------
+
+END - TEST 30
+
+
+
+START - TEST 52
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(29);
+generatedTree.insert(27);
+generatedTree.insert(39);
+generatedTree.insert(32);
+generatedTree.insert(36);
+generatedTree.insert(14);
+generatedTree.insert(41);
+generatedTree.insert(48);
+generatedTree.insert(57);
+generatedTree.insert(89);
+generatedTree.insert(86);
+generatedTree.insert(19);
+generatedTree.insert(25);
+generatedTree.insert(66);
+generatedTree.insert(64);
+generatedTree.insert(30);
+generatedTree.insert(91);
+------------------------------
+
+└── 36, 57
+    ├── 19, 29
+    │   ├── 14
+    │   ├── 25, 27
+    │   └── 30, 32
+    ├── 41
+    │   ├── 39
+    │   └── 48
+    └── 86
+        ├── 64, 66
+        └── 89, 91
+
+------------------------------
+
+generatedTree.delete(41)
+generatedTree.delete(25)
+
+------------------------------
+
+└── 57
+    ├── 19, 29, 36
+    │   ├── 14
+    │   ├── 27
+    │   ├── 30, 32
+    │   └── 39, 48
+    └── 86
+        ├── 64, 66
+        └── 89, 91
+
+
+------------------------------
+
+END - TEST 52
+
+
+
+START - TEST 56
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(41);
+generatedTree.insert(28);
+generatedTree.insert(89);
+generatedTree.insert(82);
+generatedTree.insert(97);
+generatedTree.insert(69);
+generatedTree.insert(32);
+generatedTree.insert(61);
+generatedTree.insert(64);
+------------------------------
+
+└── 41, 69, 89
+    ├── 28, 32
+    ├── 61, 64
+    ├── 82
+    └── 97
+
+------------------------------
+
+generatedTree.delete(61)
+generatedTree.delete(89)
+generatedTree.delete(82)
+
+------------------------------
+
+└── 41, 69
+    ├── 28, 32
+    ├── 64
+    └── 97
+
+
+------------------------------
+
+END - TEST 56
+
+
+
+START - TEST 69
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(71);
+generatedTree.insert(50);
+generatedTree.insert(63);
+generatedTree.insert(14);
+generatedTree.insert(43);
+generatedTree.insert(23);
+generatedTree.insert(32);
+generatedTree.insert(83);
+generatedTree.insert(25);
+generatedTree.insert(99);
+------------------------------
+
+└── 43
+    ├── 23
+    │   ├── 14
+    │   └── 25, 32
+    └── 63
+        ├── 50
+        └── 71, 83, 99
+
+------------------------------
+
+generatedTree.delete(25)
+generatedTree.delete(71)
+generatedTree.delete(23)
+
+------------------------------
+
+└── 43, 63
+    ├── 14, 32
+    ├── 50
+    └── 83, 99
+
+
+------------------------------
+
+END - TEST 69
+
+
+
+START - TEST 6
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(19);
+generatedTree.insert(99);
+generatedTree.insert(12);
+generatedTree.insert(72);
+generatedTree.insert(96);
+generatedTree.insert(53);
+------------------------------
+
+└── 19, 96
+    ├── 12
+    ├── 53, 72
+    └── 99
+
+------------------------------
+
+generatedTree.delete(96)
+generatedTree.delete(19)
+
+------------------------------
+
+└── 72
+    ├── 12, 53
+    └── 99
+
+
+------------------------------
+
+END - TEST 6
+
+
+
+START - TEST 9
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(56);
+generatedTree.insert(76);
+generatedTree.insert(91);
+generatedTree.insert(82);
+generatedTree.insert(80);
+generatedTree.insert(83);
+generatedTree.insert(42);
+generatedTree.insert(59);
+generatedTree.insert(41);
+generatedTree.insert(63);
+generatedTree.insert(96);
+generatedTree.insert(85);
+------------------------------
+
+└── 76
+    ├── 56
+    │   ├── 41, 42
+    │   └── 59, 63
+    └── 82, 91
+        ├── 80
+        ├── 83, 85
+        └── 96
+
+------------------------------
+
+generatedTree.delete(63)
+generatedTree.delete(76)
+
+------------------------------
+
+└── 82
+    ├── 56
+    │   ├── 41, 42
+    │   └── 59, 80
+    └── 91
+        ├── 83, 85
+        └── 96
+
+
+------------------------------
+
+END - TEST 9
+
+
+
+START - TEST 19
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(74);
+generatedTree.insert(63);
+generatedTree.insert(72);
+generatedTree.insert(67);
+generatedTree.insert(32);
+generatedTree.insert(48);
+generatedTree.insert(31);
+generatedTree.insert(55);
+generatedTree.insert(25);
+generatedTree.insert(60);
+generatedTree.insert(83);
+generatedTree.insert(53);
+------------------------------
+
+└── 63
+    ├── 32, 55
+    │   ├── 25, 31
+    │   ├── 48, 53
+    │   └── 60
+    └── 72
+        ├── 67
+        └── 74, 83
+
+------------------------------
+
+generatedTree.delete(63)
+generatedTree.delete(53)
+
+------------------------------
+
+└── 60
+    ├── 32
+    │   ├── 25, 31
+    │   └── 48, 55
+    └── 72
+        ├── 67
+        └── 74, 83
+
+
+------------------------------
+
+END - TEST 19
+
+
+
+START - TEST 20
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(82);
+generatedTree.insert(12);
+generatedTree.insert(81);
+generatedTree.insert(11);
+generatedTree.insert(73);
+generatedTree.insert(38);
+generatedTree.insert(61);
+generatedTree.insert(67);
+generatedTree.insert(14);
+generatedTree.insert(54);
+generatedTree.insert(57);
+generatedTree.insert(92);
+generatedTree.insert(76);
+generatedTree.insert(58);
+generatedTree.insert(65);
+generatedTree.insert(39);
+------------------------------
+
+└── 61
+    ├── 12, 38, 57
+    │   ├── 11
+    │   ├── 14
+    │   ├── 39, 54
+    │   └── 58
+    └── 73, 81
+        ├── 65, 67
+        ├── 76
+        └── 82, 92
+
+------------------------------
+
+generatedTree.delete(39)
+generatedTree.delete(57)
+generatedTree.delete(65)
+
+------------------------------
+
+└── 61
+    ├── 12, 38
+    │   ├── 11
+    │   ├── 14
+    │   └── 54, 58
+    └── 73, 81
+        ├── 67
+        ├── 76
+        └── 82, 92
+
+
+------------------------------
+
+END - TEST 20
+
+
+
+START - TEST 33
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(93);
+generatedTree.insert(89);
+generatedTree.insert(67);
+generatedTree.insert(32);
+generatedTree.insert(57);
+generatedTree.insert(33);
+generatedTree.insert(78);
+generatedTree.insert(92);
+generatedTree.insert(54);
+generatedTree.insert(55);
+generatedTree.insert(21);
+------------------------------
+
+└── 57
+    ├── 33
+    │   ├── 21, 32
+    │   └── 54, 55
+    └── 89
+        ├── 67, 78
+        └── 92, 93
+
+------------------------------
+
+generatedTree.delete(57)
+generatedTree.delete(78)
+generatedTree.delete(33)
+
+------------------------------
+
+└── 32, 55, 89
+    ├── 21
+    ├── 54
+    ├── 67
+    └── 92, 93
+
+
+------------------------------
+
+END - TEST 33
+
+
+
+START - TEST 50
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(92);
+generatedTree.insert(38);
+generatedTree.insert(48);
+generatedTree.insert(86);
+generatedTree.insert(59);
+generatedTree.insert(55);
+generatedTree.insert(52);
+generatedTree.insert(98);
+generatedTree.insert(53);
+generatedTree.insert(87);
+generatedTree.insert(69);
+generatedTree.insert(30);
+generatedTree.insert(65);
+generatedTree.insert(84);
+generatedTree.insert(37);
+generatedTree.insert(15);
+generatedTree.insert(91);
+generatedTree.insert(64);
+generatedTree.insert(28);
+------------------------------
+
+└── 55, 86
+    ├── 37, 48
+    │   ├── 15, 28, 30
+    │   ├── 38
+    │   └── 52, 53
+    ├── 65
+    │   ├── 59, 64
+    │   └── 69, 84
+    └── 92
+        ├── 87, 91
+        └── 98
+
+------------------------------
+
+generatedTree.delete(86)
+generatedTree.delete(53)
+
+------------------------------
+
+└── 55
+    ├── 37, 48
+    │   ├── 15, 28, 30
+    │   ├── 38
+    │   └── 52
+    └── 65, 84, 92
+        ├── 59, 64
+        ├── 69
+        ├── 87, 91
+        └── 98
+
+
+------------------------------
+
+END - TEST 50
+
+
+
+START - TEST 57
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(71);
+generatedTree.insert(78);
+generatedTree.insert(88);
+generatedTree.insert(66);
+generatedTree.insert(45);
+generatedTree.insert(32);
+generatedTree.insert(89);
+generatedTree.insert(46);
+------------------------------
+
+└── 66, 78
+    ├── 32, 45, 46
+    ├── 71
+    └── 88, 89
+
+------------------------------
+
+generatedTree.delete(32)
+generatedTree.delete(71)
+generatedTree.delete(46)
+
+------------------------------
+
+└── 78
+    ├── 45, 66
+    └── 88, 89
+
+
+------------------------------
+
+END - TEST 57
+
+
+
+START - TEST 72
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(84);
+generatedTree.insert(66);
+generatedTree.insert(95);
+generatedTree.insert(85);
+generatedTree.insert(27);
+generatedTree.insert(76);
+generatedTree.insert(49);
+generatedTree.insert(51);
+generatedTree.insert(29);
+generatedTree.insert(47);
+generatedTree.insert(77);
+------------------------------
+
+└── 66
+    ├── 49
+    │   ├── 27, 29, 47
+    │   └── 51
+    └── 84
+        ├── 76, 77
+        └── 85, 95
+
+------------------------------
+
+generatedTree.delete(84)
+generatedTree.delete(66)
+
+------------------------------
+
+└── 49, 77
+    ├── 27, 29, 47
+    ├── 51, 76
+    └── 85, 95
+
+
+------------------------------
+
+END - TEST 72
+
+
+
+START - TEST 73
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(42);
+generatedTree.insert(76);
+generatedTree.insert(64);
+generatedTree.insert(47);
+generatedTree.insert(17);
+generatedTree.insert(65);
+generatedTree.insert(27);
+generatedTree.insert(52);
+generatedTree.insert(77);
+generatedTree.insert(37);
+generatedTree.insert(78);
+generatedTree.insert(33);
+generatedTree.insert(25);
+generatedTree.insert(45);
+generatedTree.insert(50);
+generatedTree.insert(51);
+------------------------------
+
+└── 42, 64
+    ├── 27
+    │   ├── 17, 25
+    │   └── 33, 37
+    ├── 47
+    │   ├── 45
+    │   └── 50, 51, 52
+    └── 76
+        ├── 65
+        └── 77, 78
+
+------------------------------
+
+generatedTree.delete(64)
+generatedTree.delete(52)
+generatedTree.delete(42)
+
+------------------------------
+
+└── 45
+    ├── 27
+    │   ├── 17, 25
+    │   └── 33, 37
+    └── 51, 76
+        ├── 47, 50
+        ├── 65
+        └── 77, 78
+
+
+------------------------------
+
+END - TEST 73
+
+
+
+START - TEST 91
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(81);
+generatedTree.insert(27);
+generatedTree.insert(46);
+generatedTree.insert(22);
+generatedTree.insert(73);
+generatedTree.insert(17);
+generatedTree.insert(13);
+generatedTree.insert(88);
+generatedTree.insert(50);
+generatedTree.insert(77);
+generatedTree.insert(20);
+generatedTree.insert(47);
+generatedTree.insert(19);
+------------------------------
+
+└── 46
+    ├── 17, 22
+    │   ├── 13
+    │   ├── 19, 20
+    │   └── 27
+    └── 73, 81
+        ├── 47, 50
+        ├── 77
+        └── 88
+
+------------------------------
+
+generatedTree.delete(50)
+generatedTree.delete(73)
+
+------------------------------
+
+└── 46
+    ├── 17, 22
+    │   ├── 13
+    │   ├── 19, 20
+    │   └── 27
+    └── 81
+        ├── 47, 77
+        └── 88
+
+
+------------------------------
+
+END - TEST 91
+
+
+
+START - TEST 14
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(59);
+generatedTree.insert(97);
+generatedTree.insert(71);
+generatedTree.insert(66);
+generatedTree.insert(34);
+generatedTree.insert(41);
+generatedTree.insert(99);
+generatedTree.insert(48);
+generatedTree.insert(96);
+generatedTree.insert(29);
+generatedTree.insert(81);
+generatedTree.insert(92);
+generatedTree.insert(89);
+generatedTree.insert(83);
+generatedTree.insert(63);
+generatedTree.insert(24);
+generatedTree.insert(67);
+generatedTree.insert(64);
+generatedTree.insert(23);
+generatedTree.insert(38);
+------------------------------
+
+└── 59, 92
+    ├── 29, 41
+    │   ├── 23, 24
+    │   ├── 34, 38
+    │   └── 48
+    ├── 66, 71
+    │   ├── 63, 64
+    │   ├── 67
+    │   └── 81, 83, 89
+    └── 97
+        ├── 96
+        └── 99
+
+------------------------------
+
+generatedTree.delete(64)
+generatedTree.delete(99)
+generatedTree.delete(66)
+
+------------------------------
+
+└── 41, 71
+    ├── 29
+    │   ├── 23, 24
+    │   └── 34, 38
+    ├── 59
+    │   ├── 48
+    │   └── 63, 67
+    └── 92
+        ├── 81, 83, 89
+        └── 96, 97
+
+
+------------------------------
+
+END - TEST 14
+
+
+
+START - TEST 9
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(56);
+generatedTree.insert(76);
+generatedTree.insert(91);
+generatedTree.insert(82);
+generatedTree.insert(80);
+generatedTree.insert(83);
+generatedTree.insert(42);
+generatedTree.insert(59);
+generatedTree.insert(41);
+generatedTree.insert(63);
+generatedTree.insert(96);
+generatedTree.insert(85);
+------------------------------
+
+└── 76
+    ├── 56
+    │   ├── 41, 42
+    │   └── 59, 63
+    └── 82, 91
+        ├── 80
+        ├── 83, 85
+        └── 96
+
+------------------------------
+
+generatedTree.delete(63)
+generatedTree.delete(76)
+
+------------------------------
+
+└── 82
+    ├── 56
+    │   ├── 41, 42
+    │   └── 59, 80
+    └── 91
+        ├── 83, 85
+        └── 96
+
+
+------------------------------
+
+END - TEST 9
+
+
+
+START - TEST 19
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(74);
+generatedTree.insert(63);
+generatedTree.insert(72);
+generatedTree.insert(67);
+generatedTree.insert(32);
+generatedTree.insert(48);
+generatedTree.insert(31);
+generatedTree.insert(55);
+generatedTree.insert(25);
+generatedTree.insert(60);
+generatedTree.insert(83);
+generatedTree.insert(53);
+------------------------------
+
+└── 63
+    ├── 32, 55
+    │   ├── 25, 31
+    │   ├── 48, 53
+    │   └── 60
+    └── 72
+        ├── 67
+        └── 74, 83
+
+------------------------------
+
+generatedTree.delete(63)
+generatedTree.delete(53)
+
+------------------------------
+
+└── 60
+    ├── 32
+    │   ├── 25, 31
+    │   └── 48, 55
+    └── 72
+        ├── 67
+        └── 74, 83
+
+
+------------------------------
+
+END - TEST 19
+
+
+
+START - TEST 91
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(81);
+generatedTree.insert(27);
+generatedTree.insert(46);
+generatedTree.insert(22);
+generatedTree.insert(73);
+generatedTree.insert(17);
+generatedTree.insert(13);
+generatedTree.insert(88);
+generatedTree.insert(50);
+generatedTree.insert(77);
+generatedTree.insert(20);
+generatedTree.insert(47);
+generatedTree.insert(19);
+------------------------------
+
+└── 46
+    ├── 17, 22
+    │   ├── 13
+    │   ├── 19, 20
+    │   └── 27
+    └── 73, 81
+        ├── 47, 50
+        ├── 77
+        └── 88
+
+------------------------------
+
+generatedTree.delete(50)
+generatedTree.delete(73)
+
+------------------------------
+
+└── 46
+    ├── 17, 22
+    │   ├── 13
+    │   ├── 19, 20
+    │   └── 27
+    └── 81
+        ├── 47, 77
+        └── 88
+
+
+------------------------------
+
+END - TEST 91
+
+
+
+START - TEST 14
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(59);
+generatedTree.insert(97);
+generatedTree.insert(71);
+generatedTree.insert(66);
+generatedTree.insert(34);
+generatedTree.insert(41);
+generatedTree.insert(99);
+generatedTree.insert(48);
+generatedTree.insert(96);
+generatedTree.insert(29);
+generatedTree.insert(81);
+generatedTree.insert(92);
+generatedTree.insert(89);
+generatedTree.insert(83);
+generatedTree.insert(63);
+generatedTree.insert(24);
+generatedTree.insert(67);
+generatedTree.insert(64);
+generatedTree.insert(23);
+generatedTree.insert(38);
+------------------------------
+
+└── 59, 92
+    ├── 29, 41
+    │   ├── 23, 24
+    │   ├── 34, 38
+    │   └── 48
+    ├── 66, 71
+    │   ├── 63, 64
+    │   ├── 67
+    │   └── 81, 83, 89
+    └── 97
+        ├── 96
+        └── 99
+
+------------------------------
+
+generatedTree.delete(64)
+generatedTree.delete(99)
+generatedTree.delete(66)
+
+------------------------------
+
+└── 41, 71
+    ├── 29
+    │   ├── 23, 24
+    │   └── 34, 38
+    ├── 59
+    │   ├── 48
+    │   └── 63, 67
+    └── 92
+        ├── 81, 83, 89
+        └── 96, 97
+
+
+------------------------------
+
+END - TEST 14
+
+
+
+START - TEST 9
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(56);
+generatedTree.insert(76);
+generatedTree.insert(91);
+generatedTree.insert(82);
+generatedTree.insert(80);
+generatedTree.insert(83);
+generatedTree.insert(42);
+generatedTree.insert(59);
+generatedTree.insert(41);
+generatedTree.insert(63);
+generatedTree.insert(96);
+generatedTree.insert(85);
+------------------------------
+
+└── 76
+    ├── 56
+    │   ├── 41, 42
+    │   └── 59, 63
+    └── 82, 91
+        ├── 80
+        ├── 83, 85
+        └── 96
+
+------------------------------
+
+generatedTree.delete(63)
+generatedTree.delete(76)
+
+------------------------------
+
+└── 82
+    ├── 56
+    │   ├── 41, 42
+    │   └── 59, 80
+    └── 91
+        ├── 83, 85
+        └── 96
+
+
+------------------------------
+
+END - TEST 9
+
+
+
+START - TEST 19
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(74);
+generatedTree.insert(63);
+generatedTree.insert(72);
+generatedTree.insert(67);
+generatedTree.insert(32);
+generatedTree.insert(48);
+generatedTree.insert(31);
+generatedTree.insert(55);
+generatedTree.insert(25);
+generatedTree.insert(60);
+generatedTree.insert(83);
+generatedTree.insert(53);
+------------------------------
+
+└── 63
+    ├── 32, 55
+    │   ├── 25, 31
+    │   ├── 48, 53
+    │   └── 60
+    └── 72
+        ├── 67
+        └── 74, 83
+
+------------------------------
+
+generatedTree.delete(63)
+generatedTree.delete(53)
+
+------------------------------
+
+└── 60
+    ├── 32
+    │   ├── 25, 31
+    │   └── 48, 55
+    └── 72
+        ├── 67
+        └── 74, 83
+
+
+------------------------------
+
+END - TEST 19
+
+
+
+START - TEST 91
+------------------------------
+BTree<Integer> generatedTree = new BTree<Integer>(2);
+generatedTree.insert(81);
+generatedTree.insert(27);
+generatedTree.insert(46);
+generatedTree.insert(22);
+generatedTree.insert(73);
+generatedTree.insert(17);
+generatedTree.insert(13);
+generatedTree.insert(88);
+generatedTree.insert(50);
+generatedTree.insert(77);
+generatedTree.insert(20);
+generatedTree.insert(47);
+generatedTree.insert(19);
+------------------------------
+
+└── 46
+    ├── 17, 22
+    │   ├── 13
+    │   ├── 19, 20
+    │   └── 27
+    └── 73, 81
+        ├── 47, 50
+        ├── 77
+        └── 88
+
+------------------------------
+
+generatedTree.delete(50)
+generatedTree.delete(73)
+
+------------------------------
+
+└── 46
+    ├── 17, 22
+    │   ├── 13
+    │   ├── 19, 20
+    │   └── 27
+    └── 81
+        ├── 47, 77
+        └── 88
+
+
+------------------------------
+
+END - TEST 91
+
+
+
